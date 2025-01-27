@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımızda</title>
+  <style>
+    #hakkimizda {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .intro-text {
+      font-size: 1.1em;
+      text-align: center;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .vision-mission {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+
+    .section-subtitle {
+      font-size: 1.8em;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .section-title {
+        font-size: 2em;
+      }
+
+      .intro-text {
+        font-size: 1em;
+      }
+    }
+
+    /* Footer CSS */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    /* Sağdaki Sütun */
+    .advertisement-column {
+      width: 25%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .advertisement-slides {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+      text-align: center;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Tıklanabilir alanın üzerine yazı ekleme */
+    .slide p {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.5em;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section id="hakkimizda">
+    <div class="container">
+      <h2 class="section-title">Hakkımızda</h2>
+      <p class="intro-text">Biz, teknoloji dünyasında yıllardır yer alan bir ekibiz. Amacımız, yenilikçi ve kullanıcı dostu çözümler sunarak insanların hayatlarını kolaylaştırmaktır. İleriye dönük hedeflerimiz, kaliteli hizmet ve ürünlerimizle sektördeki lider konumumuzu daha da pekiştirmektir.</p>
+      
+      <div class="content">
+        <div class="vision-mission">
+          <h3 class="section-subtitle">Vizyonumuz</h3>
+          <p class="description">İleri teknoloji kullanarak, dünya çapında hizmet veren bir marka olmayı hedefliyoruz. Yenilikçi çözümlerimizle sektördeki trendleri belirlemek ve kullanıcı deneyimini iyileştirmek için sürekli olarak gelişiyoruz.</p>
+        </div>
+        
+        <div class="vision-mission">
+          <h3 class="section-subtitle">Misyonumuz</h3>
+          <p class="description">Kaliteli ve güvenilir ürünler sunarak müşterilerimize değer katmak, onların ihtiyaçlarına en iyi şekilde cevap verebilmek için sürekli olarak çalışmalarımızı sürdürmek.</p>
+        </div>
+        
+        <!-- Sağ Sütun -->
+        <div class="advertisement-column">
+          <div class="advertisement-slides">
+            <div class="slide active">
+              <a href="https://www.donanimhaber.com/cache-v2/?t=20250127001800&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187006/340x191threads-ana-ekrana-reklamlar-geliyor.jpg">
+                <img src="https://www.donanimhaber.com/cache-v2/?t=20250127001800&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187006/340x191threads-ana-ekrana-reklamlar-geliyor.jpg" alt="Threads resmi olarak reklam testlerine başladı">
+                <p>Threads resmi olarak reklam testlerine başladı</p>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="https://www.donanimhaber.com/cache-v2/?t=20250127063127&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187012/340x191galaxy-a55-kullanicilari-yeni-guvenlik-yamasina-kavusuyor.jpg">
+                <img src="https://www.donanimhaber.com/cache-v2/?t=20250127063127&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187012/340x191galaxy-a55-kullanicilari-yeni-guvenlik-yamasina-kavusuyor.jpg" alt="Galaxy A55 kullanıcıları yeni güvenlik yamasına kavuşuyor">
+                <p>Galaxy A55 kullanıcıları yeni güvenlik yamasına kavuşuyor</p>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="https://www.donanimhaber.com/cache-v2/?t=20250126232232&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187003/340x191bilim-insanlari-yeraltinda-surpriz-yasam-formlari-kesfetti.jpg">
+                <img src="https://www.donanimhaber.com/cache-v2/?t=20250126232232&width=-1&text=0&path=https://www.donanimhaber.com/images/images/haber/187003/340x191bilim-insanlari-yeraltinda-surpriz-yasam-formlari-kesfetti.jpg" alt="Bilim insanları, yeraltında sürpriz yaşam formları keşfetti">
+                <p>Bilim insanları, yeraltında sürpriz yaşam formları keşfetti</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Bölümü -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">© 2025 Tüm Hakları Saklıdır</p>
+      <div class="footer-links">
+        <a href="index.html">Anasayfa</a>
+        <a href="services.html">Hizmetler</a>
+        <a href="contact.html">İletişim</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Slayt geçişi için JavaScript
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    
+    function showSlide() {
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === currentSlide) {
+          slide.classList.add('active');
+        }
+      });
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000);  // 3 saniye aralıkla geçiş
+  </script>
+
+</body>
+</html>
